@@ -1,0 +1,2 @@
+# check sub-folder size
+du --max-depth=1 /var/oracle/backups/rman/archivelog | sort -n -r
