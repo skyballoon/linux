@@ -3,3 +3,11 @@ du --max-depth=1 /var/oracle/backups/rman/archivelog | sort -n -r
 
 # unzip to other folder
 unzip /home/boo/Downloads/instantclient-basic-windows.x64-11.2.0.3.0.zip -d /home/boo/.wine/drive_c/ORA/BIN
+
+# check gtk version
+dpkg -s libgtk2.0-0|grep '^Version'
+# Version: 2.24.20-1ubuntu1
+
+
+dpkg -s libgtk-3-0|grep '^Version'
+# Version: 3.8.4-0ubuntu3
